@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "all-orders",
+    "pluralName": "orders",
+    "displayName": "Orders",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "orderId": {
+      "type": "uid"
+    },
+    "customerName": {
+      "type": "string"
+    },
+    "customerPhoneNumber": {
+      "type": "string"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::products-info.products-info"
+    },
+    "orderStatus": {
+      "type": "string"
+    },
+    "paymentStatus": {
+      "type": "string"
+    },
+    "totalAmount": {
+      "type": "decimal"
+    }
+  }
+}

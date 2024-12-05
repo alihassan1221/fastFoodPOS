@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reports",
+  "info": {
+    "singularName": "report",
+    "pluralName": "reports",
+    "displayName": "Reports"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reportType": {
+      "type": "string"
+    },
+    "dateRange": {
+      "type": "datetime"
+    },
+    "totalSales": {
+      "type": "decimal"
+    },
+    "totalOrders": {
+      "type": "integer"
+    }
+  }
+}
